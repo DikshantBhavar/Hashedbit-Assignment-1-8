@@ -1,0 +1,36 @@
+def sum_of_products_of_digits(n1, n2):
+    """Calculate sum of products of corresponding digits of n1 and n2"""
+    # Convert numbers to strings to easily iterate through digits
+    str_n1 = str(n1)
+    str_n2 = str(n2)
+    
+    # Initialize sum of products
+    sum_products = 0
+    
+    # Iterate through digits of both numbers
+    max_len = max(len(str_n1), len(str_n2))
+    for i in range(max_len):
+        digit_n1 = int(str_n1[-(i + 1)]) if i < len(str_n1) else 0
+        digit_n2 = int(str_n2[-(i + 1)]) if i < len(str_n2) else 0
+        
+        # Calculate product of corresponding digits and add to sum
+        product = digit_n1 * digit_n2
+        sum_products += product
+    
+    return sum_products
+
+# Example usage:
+n1 = 6
+n2 = 34
+result = sum_of_products_of_digits(n1, n2)
+print(f"Sum of products of corresponding digits of {n1} and {n2} is: {result}")
+
+n3 = 123
+n4 = 456
+result = sum_of_products_of_digits(n3, n4)
+print(f"Sum of products of corresponding digits of {n3} and {n4} is: {result}")
+
+n5 = 9876
+n6 = 54321
+result = sum_of_products_of_digits(n5, n6)
+print(f"Sum of products of corresponding digits of {n5} and {n6} is: {result}")

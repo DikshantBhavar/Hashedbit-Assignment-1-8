@@ -1,0 +1,9 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var button = document.getElementById("changeColorButton");
+  button.addEventListener("click", function() {
+    var paragraphs = document.querySelectorAll("#container p");
+    paragraphs.forEach(function(paragraph) {
+      paragraph.classList.toggle("highlight");
+    });
+  });
+});

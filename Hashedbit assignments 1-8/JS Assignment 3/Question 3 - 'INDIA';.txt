@@ -1,0 +1,13 @@
+let string = 'INDIA';
+
+// Convert the string to an array
+let charArray = string.split('');
+
+// Use splice to insert 'ONES' after 'IND'
+charArray.splice(3, 0, 'O', 'N', 'E', 'S');
+
+// Join the array back into a string
+let newString = charArray.join('');
+
+// Display the result
+console.log(newString);  // Outputs 'INDONESIA'

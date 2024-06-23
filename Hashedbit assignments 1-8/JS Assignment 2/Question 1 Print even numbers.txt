@@ -1,0 +1,11 @@
+# Print even numbers from 1 to 100
+for num in range(2, 101, 2):
+    print(num)
+
+output
+
+2
+4
+6
+...
+100

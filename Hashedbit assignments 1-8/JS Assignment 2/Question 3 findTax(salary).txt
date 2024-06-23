@@ -1,0 +1,32 @@
+def findTax(salary):
+    """Calculate tax amount based on salary"""
+    tax = 0
+    
+    # Using conditional statements to determine tax rate
+    if salary > 0 and salary <= 500000:
+        tax = 0
+    elif salary > 500000 and salary <= 1000000:
+        tax = salary * 0.10
+    elif salary > 1000000 and salary <= 1500000:
+        tax = salary * 0.20
+    elif salary > 1500000:
+        tax = salary * 0.30
+    
+    return tax
+
+# Example usage:
+salary1 = 400000  # Example salary
+tax1 = findTax(salary1)
+print(f"Salary: {salary1}, Tax: {tax1}")
+
+salary2 = 800000  # Example salary
+tax2 = findTax(salary2)
+print(f"Salary: {salary2}, Tax: {tax2}")
+
+salary3 = 1200000  # Example salary
+tax3 = findTax(salary3)
+print(f"Salary: {salary3}, Tax: {tax3}")
+
+salary4 = 1600000  # Example salary
+tax4 = findTax(salary4)
+print(f"Salary: {salary4}, Tax: {tax4}")

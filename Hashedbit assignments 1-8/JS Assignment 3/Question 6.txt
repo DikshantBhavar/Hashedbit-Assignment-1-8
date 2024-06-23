@@ -1,0 +1,7 @@
+let inputArr = [1, 2, 3, 9, 10, 7, 5, 4, 3];
+
+// Use filter method to get numbers greater than 5
+let result = inputArr.filter(number => number > 5);
+
+// Display the result
+console.log(result);  // Outputs: [9, 10, 7]

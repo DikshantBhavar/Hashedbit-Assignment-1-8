@@ -1,0 +1,10 @@
+function countWords(paragraph) {
+    // Split the paragraph by spaces and filter out empty strings
+    const words = paragraph.trim().split(/\s+/);
+    return words.length;
+}
+
+// Example usage
+let paragraph = "This is an example paragraph. It contains several words and we need to count them.";
+let wordCount = countWords(paragraph);
+console.log(`The number of words in the paragraph is: ${wordCount}`);  // Outputs: The number of words in the paragraph is: 14

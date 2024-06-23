@@ -1,0 +1,13 @@
+#calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#value1, #value2 {
+  margin: 5px;
+}
+
+button {
+  margin: 5px;
+}
